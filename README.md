@@ -69,10 +69,17 @@ CREATE TABLE IF NOT EXISTS Employee (
 );
 ```
 
+<<<<<<< HEAD
 
 
 ---
 
+=======
+> Hinweis: Ich habe `phone` in `BIGINT` geändert, da Telefonnummern meist mehr Stellen haben als ein normaler `INT` speichern kann. Außerdem fehlte bei `VARCHAR()` die Länge – das habe ich ergänzt.
+
+---
+
+>>>>>>> fa7ff0a9018ba4bcf6178595b1e1145fb42adee6
 ## Update data in a table
 
 **Table name**: `people`
@@ -83,6 +90,7 @@ CREATE TABLE IF NOT EXISTS Employee (
 
 ---
 
+<<<<<<< HEAD
 ```sql
 Update people
 SET name = "Mohammad" WHERE person_id = 1;
@@ -161,3 +169,6 @@ FROM products;
 SELECT product_name, brand_name, marked_price, discounted_price, ((marked_price - discounted_price) / marked_price) * 100 AS discounted_percent
 FROM products;
 ```
+=======
+Wenn du möchtest, kann ich auch noch `UPDATE`-Beispiele oder `INSERT`-Statements hinzufügen. Sag einfach Bescheid!
+>>>>>>> fa7ff0a9018ba4bcf6178595b1e1145fb42adee6
