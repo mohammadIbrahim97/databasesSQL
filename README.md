@@ -127,28 +127,28 @@ Consider a hypothetical dataset named products containing information about vari
 
 ### **Displaying the Dataset**
 
-```
+```SQL
 -- Show all columns from the products table
 SELECT * FROM products;
 ```
 
 ### **Selecting Specific Columns**
 
-```
+```SQL
 -- Show only product_name and brand_name columns
 SELECT product_name, brand_name FROM products;
 ```
 
 ### **Selecting Specific Columns in a Different Order**
 
-```
+```SQL
 -- Show brand_name first, followed by product_name
 SELECT brand_name, product_name FROM products;
 ```
 
 ### **Creating a New Column with Mathematical Functions (Discounted Amount)**
 
-```
+```SQL
 -- Calculate discounted_amount as the difference between marked_price and discounted_price
 SELECT product_name, brand_name, marked_price, discounted_price, marked_price - discounted_price AS discounted_amount
 FROM products;
@@ -156,7 +156,7 @@ FROM products;
 
 ### **Creating a New Column with Mathematical Functions (Rating Filter)**
 
-```
+```SQL
 -- Calculate rating_filter by multiplying rating and rating_count
 SELECT product_name, brand_name, rating, rating_count, rating * rating_count AS rating_filter
 FROM products;
@@ -164,11 +164,8 @@ FROM products;
 
 ### **Creating a New Column with Mathematical Functions (Discount Percentage)**
 
-```
+```SQL
 -- Calculate discounted_percent as the percentage discount
 SELECT product_name, brand_name, marked_price, discounted_price, ((marked_price - discounted_price) / marked_price) * 100 AS discounted_percent
 FROM products;
 ```
-=======
-Wenn du möchtest, kann ich auch noch `UPDATE`-Beispiele oder `INSERT`-Statements hinzufügen. Sag einfach Bescheid!
->>>>>>> fa7ff0a9018ba4bcf6178595b1e1145fb42adee6
